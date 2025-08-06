@@ -1,0 +1,1 @@
+# LocalMartAI Django App Initialization
