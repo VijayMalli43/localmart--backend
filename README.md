@@ -68,18 +68,30 @@ LocalMartAI_Project/
 - MySQL 8.0+
 - Virtual Environment
 
+### Important Note about AI Models
+⚠️ **AI model files are not included in this repository due to size limitations.**
+The following directories are excluded from the repository:
+- `core/ai_models/dynamic_ml/` (ML recommendation models)
+- `core/ai_models/sentiment_model/` (NLP sentiment analysis model)
+
+To fully enable AI features, you'll need to:
+1. Train your own models or obtain pre-trained models
+2. Place them in the appropriate directories as shown in the project structure
+3. Ensure model file names match those expected by `ml_engine.py`
+
 ### Setup Instructions
 
 1. **Clone the repository**
 ```bash
-cd LocalMartAI_Project
+git clone https://github.com/VijayMalli43/localmart--backend.git
+cd localmart--backend
 ```
 
 2. **Create and activate virtual environment**
 ```bash
-python -m venv venv
-venv\Scripts\activate  # Windows
-# source venv/bin/activate  # Linux/Mac
+python -m venv venv_new
+venv_new\Scripts\activate  # Windows
+# source venv_new/bin/activate  # Linux/Mac
 ```
 
 3. **Install dependencies**
